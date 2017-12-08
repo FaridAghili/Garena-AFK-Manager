@@ -1,0 +1,11 @@
+Sitemap: http://www.afk-manager.ir/sitemap.xml
+
+User-agent: *
+Disallow: /css/
+Disallow: /downloads/
+Disallow: /fonts/
+Disallow: /img/
+Disallow: /includes/
+Disallow: /management/
+Disallow: /pages/
+Disallow: /server/

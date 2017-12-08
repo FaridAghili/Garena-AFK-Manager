@@ -1,0 +1,22 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^(.*)$ http://www.afk-manager.ir/$1 [R=301,L]
+
+RewriteRule ^$                        pages/Home.php
+RewriteRule ^AccountPurchase$         pages/AccountPurchase.php
+RewriteRule ^AccountPurchaseCallback$ pages/AccountPurchaseCallback.php
+RewriteRule ^AccountRenew$            pages/AccountRenew.php
+RewriteRule ^AccountRenewCallback$    pages/AccountRenewCallback.php
+RewriteRule ^Changelog$               pages/Changelog.php
+RewriteRule ^Contact$                 pages/Contact.php
+RewriteRule ^CustomPayment$           pages/CustomPayment.php
+RewriteRule ^CustomPaymentCallback$   pages/CustomPaymentCallback.php
+RewriteRule ^FAQ$                     pages/FAQ.php
+RewriteRule ^offers$                  pages/offers.php
+RewriteRule ^PasswordChange$          pages/PasswordChange.php
+RewriteRule ^PasswordReset$           pages/PasswordReset.php
+
+ExpiresActive On
+ExpiresByType text/css               "access plus 1 month"
+ExpiresByType image/png              "access plus 1 month"
+ExpiresByType application/x-font-ttf "access plus 1 month"
